@@ -14,8 +14,6 @@ struct ListAppetizer: View {
     @State var isShowDetail: Bool = false
     @State var appetizerPicked: AppetizerData = MockData.sampleAppetizer
     
-
-    
     var body: some View {
         NavigationView{
             switch viewModel.viewStatus {
@@ -26,19 +24,7 @@ struct ListAppetizer: View {
                 ZStack{
                     List(viewModel.listAppetizer){
                         item in
-                        HStack{
-                            NetworkImage(urlString: item.imageURL).frame(width: 120,height: 90).cornerRadius(8)
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text(item.name)
-                                    .font(.title2)
-                                    .fontWeight(.medium)
-                                
-                                Text("$\(item.price, specifier: "%.2f")")
-                                    .foregroundColor(.secondary)
-                                    .fontWeight(.semibold)
-                            }
-                            .padding(.leading)
-                        }.onTapGesture {
+                        AppetizerCell(item: item).onTapGesture {
                             isShowDetail = true
                             appetizerPicked = item
                         }

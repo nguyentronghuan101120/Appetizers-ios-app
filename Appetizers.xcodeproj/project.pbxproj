@@ -31,6 +31,13 @@
 		CEAB8F2C2BA9885500061C24 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F2A2BA9885500061C24 /* AppButton.swift */; };
 		CEAB8F2E2BA98A6C00061C24 /* NutritionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F2D2BA98A6C00061C24 /* NutritionInfo.swift */; };
 		CEAB8F302BA98B6500061C24 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F2F2BA98B6500061C24 /* MockData.swift */; };
+		CEAB8F322BAA7F9600061C24 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F312BAA7F9600061C24 /* AccountViewModel.swift */; };
+		CEAB8F372BAA810100061C24 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F362BAA810100061C24 /* StringExt.swift */; };
+		CEAB8F3A2BAA827400061C24 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F392BAA827400061C24 /* AlertItem.swift */; };
+		CEAB8F3C2BAA891900061C24 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F3B2BAA891900061C24 /* UserModel.swift */; };
+		CEAB8F3E2BAA949C00061C24 /* AppetizerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F3D2BAA949C00061C24 /* AppetizerCell.swift */; };
+		CEAB8F412BAA988600061C24 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F402BAA988600061C24 /* EmptyView.swift */; };
+		CEAB8F432BAA9BCD00061C24 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F422BAA9BCD00061C24 /* OrderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +85,13 @@
 		CEAB8F2A2BA9885500061C24 /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		CEAB8F2D2BA98A6C00061C24 /* NutritionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionInfo.swift; sourceTree = "<group>"; };
 		CEAB8F2F2BA98B6500061C24 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		CEAB8F312BAA7F9600061C24 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		CEAB8F362BAA810100061C24 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		CEAB8F392BAA827400061C24 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		CEAB8F3B2BAA891900061C24 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CEAB8F3D2BAA949C00061C24 /* AppetizerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerCell.swift; sourceTree = "<group>"; };
+		CEAB8F402BAA988600061C24 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		CEAB8F422BAA9BCD00061C24 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				CE05F8692BA44ED600E4D985 /* AppetizerResponse.swift */,
+				CEAB8F3B2BAA891900061C24 /* UserModel.swift */,
+				CEAB8F422BAA9BCD00061C24 /* OrderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +192,7 @@
 		CE6F50142BA3FC30004ACA67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB8F3F2BAA975F00061C24 /* EmptyView */,
 				CEAB8F222BA9876000061C24 /* AppetizerDetailView */,
 				CEAB8F1D2BA9752100061C24 /* CommonViews */,
 				CEAB8F152BA96AE700061C24 /* Order */,
@@ -198,10 +215,12 @@
 		CEAB8F0D2BA94C2500061C24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB8F352BAA80F200061C24 /* Extentions */,
 				CEAB8F1E2BA9756700061C24 /* ImageLoader.swift */,
 				CEAB8F1A2BA96BB400061C24 /* Enums */,
 				CEAB8F0C2BA94C1600061C24 /* Network */,
 				CEAB8F2F2BA98B6500061C24 /* MockData.swift */,
+				CEAB8F392BAA827400061C24 /* AlertItem.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,7 +245,8 @@
 		CEAB8F142BA96ADD00061C24 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				CE6F50192BA3FC68004ACA67 /* AccountView.swift */,
+				CEAB8F342BAA7F9D00061C24 /* ViewModel */,
+				CEAB8F332BAA7F9900061C24 /* Views */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -269,6 +289,7 @@
 				CEAB8F2A2BA9885500061C24 /* AppButton.swift */,
 				CEAB8F292BA9885500061C24 /* CircleDismissButton.swift */,
 				CEAB8F202BA9791900061C24 /* NetworkImage.swift */,
+				CEAB8F3D2BAA949C00061C24 /* AppetizerCell.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -296,6 +317,38 @@
 				CEAB8F2D2BA98A6C00061C24 /* NutritionInfo.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CEAB8F332BAA7F9900061C24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F50192BA3FC68004ACA67 /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEAB8F342BAA7F9D00061C24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB8F312BAA7F9600061C24 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEAB8F352BAA80F200061C24 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB8F362BAA810100061C24 /* StringExt.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		CEAB8F3F2BAA975F00061C24 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB8F402BAA988600061C24 /* EmptyView.swift */,
+			);
+			path = EmptyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,16 +487,23 @@
 				CEAB8F2C2BA9885500061C24 /* AppButton.swift in Sources */,
 				CEAB8F282BA9876000061C24 /* AppetizerDetailView.swift in Sources */,
 				CEAB8F0F2BA94C3F00061C24 /* NetworkManager.swift in Sources */,
+				CEAB8F3C2BAA891900061C24 /* UserModel.swift in Sources */,
+				CEAB8F322BAA7F9600061C24 /* AccountViewModel.swift in Sources */,
 				CE6F4FED2BA3FC06004ACA67 /* Persistence.swift in Sources */,
 				CE05F86A2BA44ED600E4D985 /* AppetizerResponse.swift in Sources */,
 				CEAB8F302BA98B6500061C24 /* MockData.swift in Sources */,
+				CEAB8F372BAA810100061C24 /* StringExt.swift in Sources */,
+				CEAB8F3A2BAA827400061C24 /* AlertItem.swift in Sources */,
 				CEAB8F2B2BA9885500061C24 /* CircleDismissButton.swift in Sources */,
 				CEAB8F212BA9791900061C24 /* NetworkImage.swift in Sources */,
 				CEAB8F1F2BA9756700061C24 /* ImageLoader.swift in Sources */,
+				CEAB8F432BAA9BCD00061C24 /* OrderModel.swift in Sources */,
 				CE6F50182BA3FC5A004ACA67 /* ListAppetizer.swift in Sources */,
 				CEAB8F1C2BA96BC200061C24 /* ViewStatusEnum.swift in Sources */,
+				CEAB8F3E2BAA949C00061C24 /* AppetizerCell.swift in Sources */,
 				CE6F501A2BA3FC68004ACA67 /* AccountView.swift in Sources */,
 				CE6F4FF02BA3FC06004ACA67 /* Appetizers.xcdatamodeld in Sources */,
+				CEAB8F412BAA988600061C24 /* EmptyView.swift in Sources */,
 				CEAB8F112BA96A2000061C24 /* NetworkError.swift in Sources */,
 				CEAB8F2E2BA98A6C00061C24 /* NutritionInfo.swift in Sources */,
 				CE6F4FE42BA3FC05004ACA67 /* AppetizersApp.swift in Sources */,
