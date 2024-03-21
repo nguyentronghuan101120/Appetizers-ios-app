@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @EnvironmentObject var order: Order
     var body: some View {
         TabView {
             ListAppetizer().tabItem {
@@ -18,7 +19,7 @@ struct MainTabView: View {
             OrderView().tabItem {
             Image(systemName: "bag")
             Text("Order")
-            }
+            }.badge(order.items.count)
             
             AccountView().tabItem {
             Image(systemName: "person")
@@ -32,5 +33,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView()
+    MainTabView().environmentObject(Order())
 }

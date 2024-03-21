@@ -28,7 +28,7 @@ struct ListAppetizer: View {
                             isShowDetail = true
                             appetizerPicked = item
                         }
-                    }.navigationTitle("Appetizers").blur(radius: isShowDetail ? 5: 0).disabled(isShowDetail)
+                    }.navigationTitle("Appetizers").blur(radius: isShowDetail ? 5: 0).disabled(isShowDetail).listStyle(.plain)
                     
                     if isShowDetail{
                         AppetizerDetailView(isShowDetail: $isShowDetail, appetizer: appetizerPicked)
@@ -39,9 +39,11 @@ struct ListAppetizer: View {
             case .initial:
                 Spacer()
             }
-        }.onAppear(){
+        }
+        .task {
             viewModel.getListAppetizer()
         }
+
     }
 }
 

@@ -37,7 +37,7 @@ struct AccountView: View {
             }
             .navigationTitle("Account")
         
-        }.onAppear(){
+        }.task{
             viewModel.retrieveUser()
         }
         .alert(item: $viewModel.alertItem){
